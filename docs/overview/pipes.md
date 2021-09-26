@@ -94,7 +94,7 @@ export default class Demo implements IController {
 POST localhost:3000/demo body:{"name":"name"}
 ```
 因为password为number类型且必传，所以会抛出这样的异常：
-```
+```json
 {
     "statusCode": 400,
     "code": "ValidationErrorException",

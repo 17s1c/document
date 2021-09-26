@@ -65,7 +65,7 @@ export default class DemoService {
 Cirrus 是围绕通常称为依赖注入的强大设计模式构建的。
 
 在 Cirrus 中，由于 TypeScript 功能，管理依赖项非常容易，因为它们仅按类型解析。在下面的示例中，Cirrus 将demoService通过创建并返回一个实例DemoService（或者，在单例的正常情况下，如果已经在其他地方请求过，则返回现有实例）来解决 。此依赖项已解析并传递给控制器​​的构造函数（或分配给指定的属性）：
-```
+```typescript
 constructor(
     private demoService: DemoService,
     private demoDao: DemoDao,
