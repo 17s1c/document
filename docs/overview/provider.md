@@ -79,7 +79,7 @@ __________
 Providers还提供了各大云厂商的云产品能力，如OSS,cache,sls,mqtt,短信服务等等（待完成）
 
 - OSS服务
-```
+```typescript
 constructor(
     @Inject('alibaba')
     private ossService: OssService,
@@ -87,7 +87,7 @@ constructor(
 
 ```
 - mqtt服务
-```
+```typescript
 constructor(
     @Inject('aws')
     private mqttService: MqttService,
