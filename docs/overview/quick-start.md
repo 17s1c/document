@@ -60,7 +60,7 @@ $ yarn start:pro
 
 - 创建Demo.ts文件，使用 `@Controller()` 装饰器定义一个基本的控制器，继承IController接口实现index方法
 - 通过`validate`方法校验请求数据是否正确，validate校验逻辑默认使用[class-validator](https://github.com/typestack/class-validator)
-也可以自定义校验逻辑详细见[Pipes]() 
+也可以自定义校验逻辑详细见[Pipes](./pipes.md) 
 ```typescript
 import { validate, Controller, IController } from 'cirri/lib'
 import { IsNumber, IsString } from 'class-validator'
@@ -110,7 +110,7 @@ Demo({
     })
 
 ```
-- (AOP 切面编程，对请求流的处理，见 [Middleware]())
+- (AOP 切面编程，对请求流的处理，见 [Middleware](./middleware.md))
 
 ### 操作数据库
 - `cirrus`框架集成了`TypeORM`框架，支持SQL和NoSQL数据库。`cirrus` 使用TypeORM是因为它是 TypeScript 中最成熟的对象关系映射器( ORM )。因为它是用 TypeScript 编写的，所以可以很好地与 `cirrus` 框架集成。

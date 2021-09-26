@@ -53,7 +53,7 @@ App.init(
 ```typescript
 @MiddleInter({ global:true })
 ```
-- `global` 如果我们只想对指定的控制器绑定，我们可以在controllers传参想要绑定的控制器
+- `controllers` 如果我们只想对指定的控制器绑定，我们可以在controllers传参想要绑定的控制器
 
 ```typescript
 @MiddleInter({ controllers: [Home,Demo] })
