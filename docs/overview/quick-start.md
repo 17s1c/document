@@ -86,7 +86,7 @@ export default class Demo implements IController {
 $ cirrus_cli sdk
 ```
 - 页面导入生成的sdk,调用后端api(代码示例)
-```bash
+```html
 # demo.html
 <html lang="en">
     <body>
@@ -94,8 +94,9 @@ $ cirrus_cli sdk
         <script type="module" src="demo.js"></script>
     </body>
 </html>
-
-# demo.js
+```
+```typescript
+// demo.js
 import { Demo } from 'sdk/cirrusSdk.js'
 Demo({
     name: 'name',
@@ -123,8 +124,9 @@ MYSQL_PORT=3306
 MYSQL_DBNAME=demo
 MYSQL_USERNAME=root
 MYSQL_PASSWORD=12345678
-
-# config.ts
+```
+```typescript
+// config.ts
 import { AppConfig } from 'cirri/lib'
 export const config: AppConfig = {
     port: Number(process.env.PORT),
